@@ -207,7 +207,6 @@ function Landing() {
                 </div>
                 <div className="p-5">
                   <p className="text-lg font-bold text-foreground">{r.label}</p>
-                  <p className="mt-1 text-xs italic text-muted-foreground">Results vary based on effort and consistency.</p>
                 </div>
               </div>
             ))}
