@@ -191,28 +191,18 @@ function Landing() {
           <SectionTitle kicker="Results">Real Transformation Stories</SectionTitle>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
             {[
-              { img: transformationMale, label: "Male · Lost 11 kg in 90 days" },
-              { img: transformationFemale, label: "Female · Lost 8 kg in 75 days" },
+              { img: transformationMale, label: "Rahul · Lost 16 kg in 90 days" },
+              { img: transformationFemale, label: "Priya · Lost 10 kg in 75 days" },
             ].map((r) => (
               <div key={r.label} className="overflow-hidden rounded-2xl border border-border bg-card shadow-card">
-                <div className="relative aspect-[16/10] overflow-hidden bg-navy">
+                <div className="relative aspect-[4/5] overflow-hidden bg-navy">
                   <img
                     src={r.img}
                     alt={r.label}
                     loading="lazy"
                     width={1024}
-                    height={768}
-                    className="h-full w-full object-cover object-bottom"
-                    style={{ objectPosition: "50% 95%" }}
-                  />
-                  {/* Privacy blur over faces (top portion) */}
-                  <div
-                    className="pointer-events-none absolute inset-x-0 top-0 h-[38%]"
-                    style={{
-                      backdropFilter: "blur(18px)",
-                      WebkitBackdropFilter: "blur(18px)",
-                      background: "linear-gradient(to bottom, oklch(0.13 0.04 260 / 0.55), oklch(0.13 0.04 260 / 0))",
-                    }}
+                    height={1024}
+                    className="h-full w-full object-contain"
                   />
                 </div>
                 <div className="p-5">
